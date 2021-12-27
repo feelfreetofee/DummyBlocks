@@ -3,7 +3,6 @@
 echo 'Would you like to install Java? (y/n)'
 read -p "y/n:" bool
 if [ "$bool" = "y" ]; then
-su
 apt-get install gnupg gnupg1 gnupg2
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A1EAC8B7
 echo 'deb https://rpardini.github.io/adoptium-deb-installer stable main' > /etc/apt/sources.list.d/rpardini-adoptium.list
